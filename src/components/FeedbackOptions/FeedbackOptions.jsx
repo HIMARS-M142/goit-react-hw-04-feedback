@@ -22,7 +22,7 @@ export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
     <StyledUl>
       {onLeaveFeedback.map(key => {
         return (
-          <ButtonList>
+          <ButtonList key={key}>
             <ButtonStyled onClick={() => options(key)} key={key}>
               {key}
             </ButtonStyled>
